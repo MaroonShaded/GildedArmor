@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[32,)"
+issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
+[[mods]]
+modId="gildedarmor"
+version="1.0"
+displayName="Gilded Armor"
+# updateJSONURL="http://myurl.me/"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/gilded-armor"
+logoFile="gildedarmor.png"
+credits="Thanks to SystemZee for the idea!"
+authors="MaroonShaded"
+description='''
+This is a mod that adds gilded armor to the game.
+Gilded armor makes piglins peaceful while you're using another armor (only netherite, currently).
+Just combine a piece of armor with a gold ingot on a smithing table and you're ready to go!
+'''
+
+[[dependencies.gildedarmor]]
+    modId="forge"
+    mandatory=true
+    versionRange="[32,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.gildedarmor]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"
