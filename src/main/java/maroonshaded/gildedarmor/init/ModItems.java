@@ -14,7 +14,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public final class ModItems
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GildedArmor.MODID);
-    private static final Item.Properties DEFAULT = new Item.Properties().group(ItemGroup.COMBAT).func_234689_a_();
+    private static final Item.Properties DEFAULT = new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire();
 
     public static final RegistryObject<Item> GILDED_NETHERITE_HELMET = ITEMS.register("gilded_netherite_helmet", () -> new GildedArmorItem(ModArmorMaterial.GILDED_NETHERITE, EquipmentSlotType.HEAD, DEFAULT));
     public static final RegistryObject<Item> GILDED_NETHERITE_CHESTPLATE = ITEMS.register("gilded_netherite_chestplate", () -> new GildedArmorItem(ModArmorMaterial.GILDED_NETHERITE, EquipmentSlotType.CHEST, DEFAULT));
