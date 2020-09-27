@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - pt-PT and pt-BR translation
 ### Fixed
+- Armor durability amount fixed.
 - File names are now correct (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1))
 
 ## [1.0.1] - 2020-07-15
