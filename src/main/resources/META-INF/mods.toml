@@ -1,9 +1,10 @@
 modLoader="javafml"
-loaderVersion="[32,)"
+license="MIT"
+loaderVersion="[34,)"
 issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 [[mods]]
 modId="gildedarmor"
-version="1.0.1"
+version="1.0.2"
 displayName="Gilded Armor"
 # updateJSONURL="http://myurl.me/"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/gildedarmor"
@@ -19,12 +20,12 @@ Just combine a piece of armor with a gold ingot on a smithing table and you're r
 [[dependencies.gildedarmor]]
     modId="forge"
     mandatory=true
-    versionRange="[32,)"
+    versionRange="[34,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.gildedarmor]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.1]"
+    versionRange="[1.16.3]"
     ordering="NONE"
     side="BOTH"
