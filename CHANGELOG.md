@@ -9,7 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2]
 ### Added
 - pt-PT and pt-BR translation
+### Changed
+- Changed description of the mod.
 ### Fixed
+- Fixed CR symbols in mod description.
 - Armor durability amount fixed.
 - File names are now correct (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1))
 
