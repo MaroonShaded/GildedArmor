@@ -4,7 +4,7 @@ loaderVersion="[34,)"
 issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 [[mods]]
 modId="gildedarmor"
-version="1.0.2"
+version="1.0.3"
 displayName="Gilded Armor"
 # updateJSONURL="http://myurl.me/"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/gildedarmor"
