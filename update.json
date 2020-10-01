@@ -1,0 +1,17 @@
+{
+  "homepage": "https://www.curseforge.com/minecraft/mc-mods/gildedarmor",
+  "1.16.3": {
+    "1.0.3": "Changed\n- Updated pack format to 6.",
+    "1.0.2": "This new version includes bug fixes and brings support for 1.16.3!\n\nAdded\n- Portuguese translation\n\nChanged\n- Changed description of the mod.\n\nFixed\n- Fixed CR symbols in the mod description.\n- The armor durability amount is now correct.\n- Fixed typo in the mod file."
+  },
+  "1.16.1": {
+    "1.0.1": "Fixed\n- Fixed mods.toml",
+    "1.0.0": "Added\n- Gilded armor"
+  },
+  "promos": {
+    "1.16.3-latest": "1.0.3",
+    "1.16.3-recommended": "1.0.3",
+    "1.16.1-latest": "1.0.1",
+    "1.16.1-recommended": "1.0.1"
+  }
+}
