@@ -4,9 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.0.4] - 2021-01-30
 ### Added
 - Added an update JSON.
+- Compatibility with 1.16.4+.
+- Russian translation.
+### Changed
+- Updated the gilded netherite leggings to match the retexture.
 
 ## [1.0.3] - 2020-09-30
 ### Changed
@@ -31,7 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0.4...HEAD
+[1.0.4]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0.3...v1.0.4
 [1.0.3]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.0...v1.0.1
