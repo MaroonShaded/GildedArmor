@@ -1,7 +1,8 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/gildedarmor",
   "1.16.5": {
-    "1.0.4": "Added\n\n- Added an update JSON.\n- Compatibility with 1.16.4+.\n- Russian translation.\n\nChanged\n- Updated the gilded netherite leggings to match the retexture."
+    "1.1.0": "Added\n- New gilded Enderite armor.\n- Polish translation.\n- Upgrading note on gilded armor items.",
+    "1.0.4": "Added\n- Added an update JSON.\n- Compatibility with 1.16.4+.\n- Russian translation.\n\nChanged\n- Updated the gilded netherite leggings to match the retexture."
   },
   "1.16.3": {
     "1.0.3": "Changed\n- Updated pack format to 6.",
@@ -12,8 +13,8 @@
     "1.0.0": "Added\n- Gilded armor"
   },
   "promos": {
-    "1.16.5-latest": "1.0.4",
-    "1.16.5-recommended": "1.0.4",
+    "1.16.5-latest": "1.1.0",
+    "1.16.5-recommended": "1.1.0",
     "1.16.3-latest": "1.0.3",
     "1.16.3-recommended": "1.0.3",
     "1.16.1-latest": "1.0.1",
