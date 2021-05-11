@@ -2,6 +2,7 @@ package maroonshaded.gildedarmor.init;
 
 import maroonshaded.gildedarmor.GildedArmor;
 import maroonshaded.gildedarmor.item.GildedArmorItem;
+import maroonshaded.gildedarmor.item.GildedEnderiteHelmetItem;
 import maroonshaded.gildedarmor.item.ModArmorMaterial;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.Item;
@@ -21,7 +22,7 @@ public final class ModItems
     public static final RegistryObject<Item> GILDED_NETHERITE_BOOTS = ITEMS.register("gilded_netherite_boots", () -> new GildedArmorItem(ModArmorMaterial.GILDED_NETHERITE, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
 
     // For the Enderite mod
-    public static final RegistryObject<Item> GILDED_ENDERITE_HELMET = ITEMS.register("gilded_enderite_helmet", () -> new GildedArmorItem(ModArmorMaterial.GILDED_ENDERITE, EquipmentSlotType.HEAD, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
+    public static final RegistryObject<Item> GILDED_ENDERITE_HELMET = ITEMS.register("gilded_enderite_helmet", () -> new GildedEnderiteHelmetItem(new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
     public static final RegistryObject<Item> GILDED_ENDERITE_CHESTPLATE = ITEMS.register("gilded_enderite_chestplate", () -> new GildedArmorItem(ModArmorMaterial.GILDED_ENDERITE, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
     public static final RegistryObject<Item> GILDED_ENDERITE_LEGGINGS = ITEMS.register("gilded_enderite_leggings", () -> new GildedArmorItem(ModArmorMaterial.GILDED_ENDERITE, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
     public static final RegistryObject<Item> GILDED_ENDERITE_BOOTS = ITEMS.register("gilded_enderite_boots", () -> new GildedArmorItem(ModArmorMaterial.GILDED_ENDERITE, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT).isImmuneToFire()));
