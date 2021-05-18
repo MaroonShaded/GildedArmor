@@ -28,9 +28,9 @@ public class GildedArmorItem extends ArmorItem
     }
 
     @Override
-    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
+    public void appendHoverText(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
     {
         for (int i = 1; i <= 3; i++)
-            tooltip.add(new TranslationTextComponent("item.gildedarmor.generic.upgrading_note" + i).mergeStyle(TextFormatting.GRAY));
+            tooltip.add(new TranslationTextComponent("item.gildedarmor.generic.upgrading_note" + i).withStyle(TextFormatting.GRAY));
     }
 }

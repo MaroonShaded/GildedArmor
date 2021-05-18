@@ -13,89 +13,90 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
+import java.util.stream.Stream;
 
 public enum ModArmorMaterial implements IArmorMaterial
 {
     GILDED_NETHERITE("gilded_netherite", ArmorMaterial.NETHERITE),
-    GILDED_ENDERITE("gilded_enderite", 8, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () ->
+    GILDED_ENDERITE("gilded_enderite", 8, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () ->
     {
         ResourceLocation id = new ResourceLocation("enderitemod", "enderite_ingot");
-        return ForgeRegistries.ITEMS.containsKey(id) ? Ingredient.fromItems(ForgeRegistries.ITEMS.getValue(id)) : Ingredient.fromItems();
+        return ForgeRegistries.ITEMS.containsKey(id) ? Ingredient.of(ForgeRegistries.ITEMS.getValue(id)) : Ingredient.of(Stream.empty());
     }, true);
 
-    private static final int[] MAX_DAMAGE_ARRAY = {13, 15, 16, 11};
-    private static final int[] ENDERITE_MAX_DAMAGE_ARRAY = {128, 144, 160, 112};
+    private static final int[] HEALTH_PER_SLOT = {13, 15, 16, 11};
+    private static final int[] ENDERITE_HEALTH_PER_SLOT = {128, 144, 160, 112};
     private final String name;
-    private final ToIntFunction<EquipmentSlotType> maxDamageFactor;
-    private final ToIntFunction<EquipmentSlotType> damageReductionAmount;
-    private final int enchantability;
-    private final SoundEvent soundEvent;
+    private final ToIntFunction<EquipmentSlotType> durability;
+    private final ToIntFunction<EquipmentSlotType> protection;
+    private final int enchantmentValue;
+    private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
-    private final LazyValue<Ingredient> repairMaterial;
+    private final LazyValue<Ingredient> repairIngredient;
 
-    ModArmorMaterial(String name, int maxDamageFactor, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent, float toughness, float knockbackResistance, Supplier<Ingredient> repairMaterial, boolean useEnderiteDurability)
+    ModArmorMaterial(String name, int durabilityMultiplier, int[] damageReductionAmountArray, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient, boolean useEnderiteDurability)
     {
         this.name = name;
-        this.maxDamageFactor = (slot) -> (useEnderiteDurability ? getEnderiteMaxDamageArray() : getMaxDamageArray())[slot.getIndex()] * maxDamageFactor;
-        damageReductionAmount = (slot) -> damageReductionAmountArray[slot.getIndex()];
-        this.enchantability = enchantability;
-        this.soundEvent = soundEvent;
+        durability = (slot) -> (useEnderiteDurability ? getEnderiteHealthPerSlot() : getHealthPerSlot())[slot.getIndex()] * durabilityMultiplier;
+        protection = (slot) -> damageReductionAmountArray[slot.getIndex()];
+        this.enchantmentValue = enchantmentValue;
+        this.sound = sound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
-        this.repairMaterial = new LazyValue<>(repairMaterial);
+        this.repairIngredient = new LazyValue<>(repairIngredient);
     }
 
     ModArmorMaterial(String name, IArmorMaterial reference)
     {
         this.name = name;
-        maxDamageFactor = reference::getDurability;
-        damageReductionAmount = reference::getDamageReductionAmount;
-        enchantability = reference.getEnchantability();
-        soundEvent = reference.getSoundEvent();
+        durability = reference::getDurabilityForSlot;
+        protection = reference::getDefenseForSlot;
+        enchantmentValue = reference.getEnchantmentValue();
+        sound = reference.getEquipSound();
         toughness = reference.getToughness();
         knockbackResistance = reference.getKnockbackResistance();
-        repairMaterial = new LazyValue<>(reference::getRepairMaterial);
+        repairIngredient = new LazyValue<>(reference::getRepairIngredient);
     }
 
-    public static int[] getMaxDamageArray()
+    public static int[] getHealthPerSlot()
     {
-        return MAX_DAMAGE_ARRAY;
+        return HEALTH_PER_SLOT;
     }
 
-    public static int[] getEnderiteMaxDamageArray()
+    public static int[] getEnderiteHealthPerSlot()
     {
-        return ENDERITE_MAX_DAMAGE_ARRAY;
-    }
-
-    @Override
-    public int getDurability(EquipmentSlotType slotIn)
-    {
-        return maxDamageFactor.applyAsInt(slotIn);
+        return ENDERITE_HEALTH_PER_SLOT;
     }
 
     @Override
-    public int getDamageReductionAmount(EquipmentSlotType slotIn)
+    public int getDurabilityForSlot(EquipmentSlotType slotIn)
     {
-        return damageReductionAmount.applyAsInt(slotIn);
+        return durability.applyAsInt(slotIn);
     }
 
     @Override
-    public int getEnchantability()
+    public int getDefenseForSlot(EquipmentSlotType slotIn)
     {
-        return enchantability;
+        return protection.applyAsInt(slotIn);
     }
 
     @Override
-    public SoundEvent getSoundEvent()
+    public int getEnchantmentValue()
     {
-        return soundEvent;
+        return enchantmentValue;
     }
 
     @Override
-    public Ingredient getRepairMaterial()
+    public SoundEvent getEquipSound()
     {
-        return repairMaterial.getValue();
+        return sound;
+    }
+
+    @Override
+    public Ingredient getRepairIngredient()
+    {
+        return repairIngredient.get();
     }
 
     @Override
