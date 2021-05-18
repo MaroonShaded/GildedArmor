@@ -16,14 +16,14 @@ import java.util.function.ToIntFunction;
 
 public enum ModArmorMaterial implements IArmorMaterial
 {
-    GILDED_NETHERITE(ArmorMaterial.NETHERITE),
+    GILDED_NETHERITE("gilded_netherite", ArmorMaterial.NETHERITE),
     GILDED_ENDERITE("gilded_enderite", 8, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () ->
     {
         ResourceLocation id = new ResourceLocation("enderitemod", "enderite_ingot");
         return ForgeRegistries.ITEMS.containsKey(id) ? Ingredient.fromItems(ForgeRegistries.ITEMS.getValue(id)) : Ingredient.fromItems();
     }, true);
 
-    private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
+    private static final int[] MAX_DAMAGE_ARRAY = {13, 15, 16, 11};
     private static final int[] ENDERITE_MAX_DAMAGE_ARRAY = {128, 144, 160, 112};
     private final String name;
     private final ToIntFunction<EquipmentSlotType> maxDamageFactor;
@@ -38,7 +38,7 @@ public enum ModArmorMaterial implements IArmorMaterial
     {
         this.name = name;
         this.maxDamageFactor = (slot) -> (useEnderiteDurability ? getEnderiteMaxDamageArray() : getMaxDamageArray())[slot.getIndex()] * maxDamageFactor;
-        this.damageReductionAmount = (slot) -> damageReductionAmountArray[slot.getIndex()];
+        damageReductionAmount = (slot) -> damageReductionAmountArray[slot.getIndex()];
         this.enchantability = enchantability;
         this.soundEvent = soundEvent;
         this.toughness = toughness;
@@ -46,9 +46,9 @@ public enum ModArmorMaterial implements IArmorMaterial
         this.repairMaterial = new LazyValue<>(repairMaterial);
     }
 
-    ModArmorMaterial(IArmorMaterial reference)
+    ModArmorMaterial(String name, IArmorMaterial reference)
     {
-        name = "gilded_" + reference.getName();
+        this.name = name;
         maxDamageFactor = reference::getDurability;
         damageReductionAmount = reference::getDamageReductionAmount;
         enchantability = reference.getEnchantability();
