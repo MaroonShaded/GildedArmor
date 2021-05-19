@@ -1,13 +1,14 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/gildedarmor",
   "1.16.5": {
+    "1.1.2": "Added\n- French translation.\n\nChanged\n- Upgrading note.\n\nFixed\n- Server-side bug (Closes [#6](https://github.com/MaroonShaded/GildedArmor/issues/6))\n- Error in Polish translation.",
     "1.1.1": "Added\n- Missing Enderite functionalities to gilded Enderite armor.\n\nFixed\n- Enderite armor recipe advancements.",
     "1.1.0": "Added\n- New gilded Enderite armor.\n- Polish translation.\n- Upgrading note on gilded armor items.",
     "1.0.4": "Added\n- Added an update JSON.\n- Compatibility with 1.16.4+.\n- Russian translation.\n\nChanged\n- Updated the gilded netherite leggings to match the retexture."
   },
   "1.16.3": {
     "1.0.3": "Changed\n- Updated pack format to 6.",
-    "1.0.2": "This new version includes bug fixes and brings support for 1.16.3!\n\nAdded\n- Portuguese translation\n\nChanged\n- Changed description of the mod.\n\nFixed\n- Fixed CR symbols in the mod description.\n- The armor durability amount is now correct.\n- Fixed typo in the mod file."
+    "1.0.2": "Support for 1.16.3!\n\nAdded\n- Portuguese translation\n\nChanged\n- Changed description of the mod.\n\nFixed\n- Fixed CR symbols in the mod description.\n- The armor durability amount is now correct.\n- Fixed typo in the mod file."
   },
   "1.16.1": {
     "1.0.1": "Fixed\n- Fixed mods.toml",

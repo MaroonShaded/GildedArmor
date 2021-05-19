@@ -4,9 +4,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.2] - 2021-05-18
+## [1.1.2] - 2021-05-19
+### Added
+- French translation.
+
+### Changed
+- Upgrading note.
+
 ### Fixed
 - Server-side bug (Closes [#6](https://github.com/MaroonShaded/GildedArmor/issues/6))
+- Error in Polish translation.
 
 ## [1.1.1] - 2021-05-11
 ### Added
@@ -25,7 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added an update JSON.
 - Compatibility with 1.16.4+.
-- Russian translation.
+- Russian translation by [randomnickname2137](https://www.curseforge.com/members/randomnickname2137) and [Jacobs Develop](https://github.com/Jacobs-Develop).
 ### Changed
 - Updated the gilded netherite leggings to match the retexture.
 
@@ -35,18 +42,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.2] - 2020-09-29
 ### Added
-- pt-PT and pt-BR translation
+- Portuguese translation.
 ### Changed
-- Changed description of the mod.
+- Description of the mod.
 ### Fixed
-- Fixed CR symbols in mod description.
-- Armor durability amount fixed.
-- File names are now correct (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1))
+- CR symbols in mod description.
+- Armor durability amount.
+- Output mod file names (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1))
 
 ## [1.0.1] - 2020-07-15
 ### Changed
-- CHANGELOG.md was modified to state that it adheres to [Semantic Versioning](https://semver.org/).
-- displayURL was fixed in mods.toml
+- CHANGELOG.md was modified to state that it adheres to [Semantic Versioning](https://semver.org/).º
+
+### Fixed
+- displayURL in mods.toml.
 
 ## [1.0] - 2020-07-14
 ### Added
