@@ -6,14 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.2] - 2021-05-19
 ### Added
-- French translation.
+- French translation by [spiderval97431](https://www.curseforge.com/members/spiderval97431).
 
 ### Changed
 - Upgrading note.
 
 ### Fixed
-- Server-side bug (Closes [#6](https://github.com/MaroonShaded/GildedArmor/issues/6))
-- Error in Polish translation.
+- Server-side bug (Closes [#6](https://github.com/MaroonShaded/GildedArmor/issues/6)).
+- Typo in Polish translation.
 
 ## [1.1.1] - 2021-05-11
 ### Added
@@ -25,14 +25,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2021-05-09
 ### Added
 - New gilded Enderite armor.
-- Polish translation.
+- Polish translation by [randomnickname2137](https://www.curseforge.com/members/randomnickname2137) and [Jacobs-Develop](https://github.com/Jacobs-Develop).
 - Upgrading note on gilded armor items.
 
 ## [1.0.4] - 2021-01-30
 ### Added
 - Added an update JSON.
 - Compatibility with 1.16.4+.
-- Russian translation by [randomnickname2137](https://www.curseforge.com/members/randomnickname2137) and [Jacobs Develop](https://github.com/Jacobs-Develop).
+- Russian translation by [kirechka](https://www.curseforge.com/members/kirechka).
 ### Changed
 - Updated the gilded netherite leggings to match the retexture.
 
@@ -48,14 +48,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - CR symbols in mod description.
 - Armor durability amount.
-- Output mod file names (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1))
+- Output mod file names (Closes [#1](https://github.com/MaroonShaded/GildedArmor/issues/1)).
 
 ## [1.0.1] - 2020-07-15
 ### Changed
-- CHANGELOG.md was modified to state that it adheres to [Semantic Versioning](https://semver.org/).º
+- `CHANGELOG.md` was modified to state that it adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
-- displayURL in mods.toml.
+- `displayURL` in `mods.toml`.
 
 ## [1.0] - 2020-07-14
 ### Added
