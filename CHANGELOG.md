@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Added
+- Chinese translation by [Moze-Yosel](https://github.com/Moze-Yosel).
+- Spanish translation by [zeedif](https://github.com/zeedif).
+- Quebec French translation.
+
+### Changed
+- Upgrading note for European Portuguese translation.
+
+### Fixed
+- Translation mistake in the Polish translation.
+
 ## [1.1.2] - 2021-05-19
 ### Added
 - French translation by [spiderval97431](https://www.curseforge.com/members/spiderval97431).
