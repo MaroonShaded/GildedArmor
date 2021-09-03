@@ -6,5 +6,8 @@
   "item.gildedarmor.gilded_enderite_helmet": "Pozłacany enderytowy hełm",
   "item.gildedarmor.gilded_enderite_chestplate": "Pozłacany enderytowy napierśnik",
   "item.gildedarmor.gilded_enderite_leggings": "Pozłacane enderytowe nogawice",
-  "item.gildedarmor.gilded_enderite_boots": "Pozłacane enderytowe buty"
+  "item.gildedarmor.gilded_enderite_boots": "Pozłacane enderytowe buty",
+  "item.gildedarmor.generic.upgrading_note1": "Uwaga: O ile zamiplementowane",
+  "item.gildedarmor.generic.upgrading_note2": "przez inne mody, pozłacana",
+  "item.gildedarmor.generic.upgrading_note3": "zbroja nie może zostać ulepszona."
 }
