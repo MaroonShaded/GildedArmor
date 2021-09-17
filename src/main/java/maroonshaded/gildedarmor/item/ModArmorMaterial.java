@@ -1,28 +1,25 @@
 package maroonshaded.gildedarmor.item;
 
+import com.google.common.base.Suppliers;
 import maroonshaded.gildedarmor.GildedArmor;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
-import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.function.Supplier;
 import java.util.function.ToIntFunction;
-import java.util.stream.Stream;
 
 public enum ModArmorMaterial implements IArmorMaterial
 {
     GILDED_NETHERITE("gilded_netherite", ArmorMaterial.NETHERITE),
-    GILDED_ENDERITE("gilded_enderite", 8, new int[] { 4, 7, 9, 4 }, 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F, () ->
-    {
-        ResourceLocation id = new ResourceLocation("enderitemod", "enderite_ingot");
-        return ForgeRegistries.ITEMS.containsKey(id) ? Ingredient.of(ForgeRegistries.ITEMS.getValue(id)) : Ingredient.of(Stream.empty());
-    }, true);
+    GILDED_ENDERITE("gilded_enderite", 8, new int[]{4, 7, 9, 4}, 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F,
+            () -> Ingredient.of(ItemTags.createOptional(new ResourceLocation(GildedArmor.MODID, "enderite_ingot"))),
+            true);
 
     private static final int[] HEALTH_PER_SLOT = {13, 15, 16, 11};
     private static final int[] ENDERITE_HEALTH_PER_SLOT = {128, 144, 160, 112};
@@ -33,7 +30,7 @@ public enum ModArmorMaterial implements IArmorMaterial
     private final SoundEvent sound;
     private final float toughness;
     private final float knockbackResistance;
-    private final LazyValue<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
     ModArmorMaterial(String name, int durabilityMultiplier, int[] damageReductionAmountArray, int enchantmentValue, SoundEvent sound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient, boolean useEnderiteDurability)
     {
@@ -44,7 +41,7 @@ public enum ModArmorMaterial implements IArmorMaterial
         this.sound = sound;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
-        this.repairIngredient = new LazyValue<>(repairIngredient);
+        this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
 
     ModArmorMaterial(String name, IArmorMaterial reference)
@@ -56,7 +53,7 @@ public enum ModArmorMaterial implements IArmorMaterial
         sound = reference.getEquipSound();
         toughness = reference.getToughness();
         knockbackResistance = reference.getKnockbackResistance();
-        repairIngredient = new LazyValue<>(reference::getRepairIngredient);
+        repairIngredient = reference::getRepairIngredient;
     }
 
     public static int[] getHealthPerSlot()
