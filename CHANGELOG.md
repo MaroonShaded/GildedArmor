@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Chinese translation by [Moze-Yosel](https://github.com/Moze-Yosel).
 - Spanish translation by [zeedif](https://github.com/zeedif).
 - Quebec French translation.
+- Implementation note for Polish.
 
 ### Changed
 - Upgrading note for European Portuguese translation.
