@@ -1,24 +1,24 @@
 package maroonshaded.gildedarmor.item;
 
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.TextFormatting;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
 public class GildedArmorItem extends ArmorItem
 {
-    public GildedArmorItem(IArmorMaterial materialIn, EquipmentSlotType slot, Properties properties)
+    public GildedArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties properties)
     {
-        super(materialIn, slot, properties);
+        super(material, slot, properties);
     }
 
     @Override
@@ -28,9 +28,9 @@ public class GildedArmorItem extends ArmorItem
     }
 
     @Override
-    public void appendHoverText(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn)
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced)
     {
         for (int i = 1; i <= 3; i++)
-            tooltip.add(new TranslationTextComponent("item.gildedarmor.generic.upgrading_note" + i).withStyle(TextFormatting.GRAY));
+            pTooltipComponents.add(new TranslatableComponent("item.gildedarmor.generic.upgrading_note" + i).withStyle(ChatFormatting.GRAY));
     }
 }

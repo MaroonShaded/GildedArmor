@@ -1,19 +1,19 @@
 package maroonshaded.gildedarmor.item;
 
-import net.minecraft.entity.monster.EndermanEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ItemStack;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.monster.EnderMan;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 
 public class GildedEnderiteHelmetItem extends GildedArmorItem
 {
     public GildedEnderiteHelmetItem(Properties properties)
     {
-        super(ModArmorMaterial.GILDED_ENDERITE, EquipmentSlotType.HEAD, properties);
+        super(ModArmorMaterials.GILDED_ENDERITE, EquipmentSlot.HEAD, properties);
     }
 
     @Override
-    public boolean isEnderMask(ItemStack stack, PlayerEntity player, EndermanEntity endermanEntity)
+    public boolean isEnderMask(ItemStack stack, Player player, EnderMan endermanEntity)
     {
         return true;
     }

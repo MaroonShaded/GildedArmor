@@ -1,6 +1,6 @@
 modLoader="javafml"
 license="MIT"
-loaderVersion="[35,)"
+loaderVersion="[37,)"
 issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 [[mods]]
     modId="gildedarmor"
@@ -16,12 +16,12 @@ issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 [[dependencies.gildedarmor]]
     modId="forge"
     mandatory=true
-    versionRange="[35,)"
+    versionRange="[37,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.gildedarmor]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.4,1.17)"
+    versionRange="[1.17.1,1.18)"
     ordering="NONE"
     side="BOTH"
