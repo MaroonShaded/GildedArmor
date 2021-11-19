@@ -4,8 +4,8 @@
 [![Versions](http://cf.way2muchnoise.eu/versions/gildedarmor.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/gildedarmor)
 [![Downloads](http://cf.way2muchnoise.eu/short_gildedarmor_downloads.svg?badge_style=for_the_badge)](https://www.curseforge.com/minecraft/mc-mods/gildedarmor/files)
 
-[![GitHub](https://img.shields.io/github/license/MaroonShaded/GildedArmor?color=blue&logo=GitHub&style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/discord/840914462370430986?label=Discord&logo=Discord&style=for-the-badge)](https://discord.gg/K5SGZvPyxp)
+[![GitHub](http://img.shields.io/github/license/MaroonShaded/GildedArmor?color=blue&logo=GitHub&style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Discord](http://img.shields.io/discord/840914462370430986?label=Discord&logo=Discord&style=for-the-badge)](https://discord.gg/K5SGZvPyxp)
 
 ![Separator](https://i.imgur.com/24oOTbP.png)
 
