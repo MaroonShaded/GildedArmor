@@ -2,7 +2,7 @@
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/gildedarmor",
   "1.17.1": {
     "1.2.2": "Fixed\n- Mistake in the gilded enderite recipes that would cause worlds not to open.",
-    "1.2.1": "Fixed\n- Mistake in the gilded enderite recipes that would cause worlds not to open.",
+    "1.2.1": "Fixed\n- Gilded enderite recipe advancements.",
     "1.2.0": "Changed\n- Updated to 1.17.1"
   },
   "1.16.5": {
