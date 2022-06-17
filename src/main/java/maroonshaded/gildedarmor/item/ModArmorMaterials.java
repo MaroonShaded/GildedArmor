@@ -18,7 +18,7 @@ public enum ModArmorMaterials implements ArmorMaterial
 {
     GILDED_NETHERITE("gilded_netherite", ArmorMaterials.NETHERITE),
     GILDED_ENDERITE("gilded_enderite", 8, new int[]{4, 7, 9, 4}, 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.0F, 0.1F,
-            () -> Ingredient.of(ItemTags.createOptional(new ResourceLocation(GildedArmor.MODID, "enderite_ingot"))),
+            () -> Ingredient.of(ItemTags.create(new ResourceLocation(GildedArmor.MODID, "enderite_ingot"))),
             true);
 
     private static final int[] HEALTH_PER_SLOT = {13, 15, 16, 11};
