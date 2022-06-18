@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Updated to 1.18.2
+- Piglins will now stare at gilded armor for a while before equipping it (like gold armor)
 
 ## [1.2.2] - 2021-10-20
 ### Fixed
