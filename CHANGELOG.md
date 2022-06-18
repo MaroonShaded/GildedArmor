@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Icon for the Catalogue mod.
+- Toki Pona translation (incomplete).
 
 ### Changed
 - Updated to 1.18.2
