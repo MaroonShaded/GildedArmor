@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated to 1.19.2
 
+### Removed
+- Intrusive tooltip from gilded armor.
+
 ## [1.3.0] - 2022-06-19
 ### Added
 - Icon for the Catalogue mod.
