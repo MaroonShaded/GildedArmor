@@ -2,7 +2,6 @@ package maroonshaded.gildedarmor.item;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
@@ -31,6 +30,6 @@ public class GildedArmorItem extends ArmorItem
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced)
     {
         for (int i = 1; i <= 3; i++)
-            pTooltipComponents.add(new TranslatableComponent("item.gildedarmor.generic.upgrading_note" + i).withStyle(ChatFormatting.GRAY));
+            pTooltipComponents.add(Component.translatable("item.gildedarmor.generic.upgrading_note" + i).withStyle(ChatFormatting.GRAY));
     }
 }
