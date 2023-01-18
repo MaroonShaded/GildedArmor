@@ -1,32 +1,47 @@
 {
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "gildedarmor:gilded_enderite_leggings_smithing"
-    ]
-  },
-  "criteria": {
-    "has_enderite_leggings": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "gildedarmor:enderite_leggings"
+  "type": "forge:conditional",
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "enderitemod"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_enderite_leggings": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "gildedarmor:enderite_leggings"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "gildedarmor:gilded_enderite_leggings_smithing"
+            }
           }
-        ]
-      }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "gildedarmor:gilded_enderite_leggings_smithing"
+        },
+        "requirements": [
+          [
+            "has_enderite_leggings",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "gildedarmor:gilded_enderite_leggings_smithing"
+          ]
+        }
       }
     }
-  },
-  "requirements": [
-    [
-      "has_enderite_leggings",
-      "has_the_recipe"
-    ]
   ]
 }

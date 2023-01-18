@@ -1,32 +1,47 @@
 {
-  "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "gildedarmor:gilded_enderite_helmet_smithing"
-    ]
-  },
-  "criteria": {
-    "has_enderite_helmet": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "gildedarmor:enderite_helmet"
+  "type": "forge:conditional",
+  "advancements": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "enderitemod"
+        }
+      ],
+      "advancement": {
+        "parent": "minecraft:recipes/root",
+        "criteria": {
+          "has_enderite_helmet": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+              "items": [
+                {
+                  "items": [
+                    "gildedarmor:enderite_helmet"
+                  ]
+                }
+              ]
+            }
+          },
+          "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+              "recipe": "gildedarmor:gilded_enderite_helmet_smithing"
+            }
           }
-        ]
-      }
-    },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "gildedarmor:gilded_enderite_helmet_smithing"
+        },
+        "requirements": [
+          [
+            "has_enderite_helmet",
+            "has_the_recipe"
+          ]
+        ],
+        "rewards": {
+          "recipes": [
+            "gildedarmor:gilded_enderite_helmet_smithing"
+          ]
+        }
       }
     }
-  },
-  "requirements": [
-    [
-      "has_enderite_helmet",
-      "has_the_recipe"
-    ]
   ]
 }
