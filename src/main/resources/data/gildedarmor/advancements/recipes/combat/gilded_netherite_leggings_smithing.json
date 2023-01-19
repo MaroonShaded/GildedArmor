@@ -1,17 +1,14 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "gildedarmor:gilded_netherite_leggings_smithing"
-    ]
-  },
   "criteria": {
     "has_netherite_leggings": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:netherite_leggings"
+            "items": [
+              "minecraft:netherite_leggings"
+            ]
           }
         ]
       }
@@ -28,5 +25,10 @@
       "has_netherite_leggings",
       "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gildedarmor:gilded_netherite_leggings_smithing"
+    ]
+  }
 }

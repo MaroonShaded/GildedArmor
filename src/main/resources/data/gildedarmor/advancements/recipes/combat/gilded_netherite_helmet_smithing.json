@@ -1,17 +1,14 @@
 {
   "parent": "minecraft:recipes/root",
-  "rewards": {
-    "recipes": [
-      "gildedarmor:gilded_netherite_helmet_smithing"
-    ]
-  },
   "criteria": {
     "has_netherite_helmet": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:netherite_helmet"
+            "items": [
+              "minecraft:netherite_helmet"
+            ]
           }
         ]
       }
@@ -28,5 +25,10 @@
       "has_netherite_helmet",
       "has_the_recipe"
     ]
-  ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gildedarmor:gilded_netherite_helmet_smithing"
+    ]
+  }
 }

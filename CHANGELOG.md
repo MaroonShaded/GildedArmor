@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Fixed
 - Combining enderite leggings and an iron ingot on a smithing table would produce gilded enderite boots.
+- Recipe advancements for gilded netherite armor would be granted whenever the inventory changed.
 
 ## [1.4.0]
 ### Changed
