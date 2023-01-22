@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Grouped gilded armor with the other armor sets in the creative tab.
 - Gilded enderite armor can only be repaired with the ingot from its own mod.
 - Recipes and recipe advancements relating to enderite now use conditionals instead of single-item tags.
+- Recipe advancements for gilded netherite are now located in a subfolder called "combat".
 
 ## Fixed
 - Combining enderite leggings and an iron ingot on a smithing table would produce gilded enderite boots.
