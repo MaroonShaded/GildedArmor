@@ -4,9 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.4.0]
+## [Unreleased]
 ### Changed
-- Updated to 1.19.2
+- Gilded enderite armor can only be repaired with the ingot from its own mod.
+- Recipes and recipe advancements relating to enderite now use conditionals instead of single-item tags.
+- Recipe advancements for gilded netherite are now located in a subfolder called "combat".
+
+## Fixed
+- Combining enderite leggings and an iron ingot on a smithing table would produce gilded enderite boots.
+- Recipe advancements for gilded netherite armor would be granted whenever the inventory changed.
+
+## [1.4.0] - 2023-01-01
+### Changed
+- Updated to 1.19.2.
 - Updated to the new format for the Catalogue mod (not working yet).
 
 ### Removed
