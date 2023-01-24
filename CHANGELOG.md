@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Updated to the new format for the Catalogue mod.
 - Gilded enderite armor can only be repaired with the ingot from its own mod.
+- Recipes and recipe advancements relating to enderite now use conditionals instead of single-item tags.
 - Recipe advancements for gilded netherite are now located in a subfolder called "combat".
 
 ### Fixed
