@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.5.0] - 2023-01-28
 ### Changed
 - Updated to 1.19.3.
 - Grouped gilded armor with the other armor sets in the creative tab.
@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Recipes and recipe advancements relating to enderite now use conditionals instead of single-item tags.
 - Recipe advancements for gilded netherite are now located in a subfolder called "combat".
 
-## Fixed
+### Fixed
 - Combining enderite leggings and an iron ingot on a smithing table would produce gilded enderite boots.
 - Recipe advancements for gilded netherite armor would be granted whenever the inventory changed.
 
@@ -118,7 +118,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.0...HEAD
+[1.5.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.3.0...v1.4.0
 [1.3.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.2.2...v1.3.0
 [1.2.2]: https://github.com/MaroonShaded/GildedArmor/compare/v1.2.1...v1.2.2
