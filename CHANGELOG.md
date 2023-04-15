@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Russian translation for the gilded enderite armor.
 
 ### Fixed
-- pt_br and es_ve translation files.
+- `pt_br` and `es_ve` translation files.
 
 ## [1.5.0] - 2023-01-28
 ### Changed
