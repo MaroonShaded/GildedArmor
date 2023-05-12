@@ -4,10 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.6.0-alpha.1] - 2023-05-12
 ### Added
 - Gilding upgrade smithing template (1.20 experimental feature).
-- Gilded armor can be trimmed.
+- Gilded armor can be trimmed (1.20 experimental feature).
 
 ### Changed
 - Updated to 1.19.4
@@ -137,7 +137,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.1...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-alpha.1...HEAD
+[1.6.0-alpha.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.1...v1.6.0-alpha.1
 [1.5.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.4.0...v1.5.0
 [1.4.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.3.0...v1.4.0
