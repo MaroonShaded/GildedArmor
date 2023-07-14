@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Changed
+- Gilding upgrade smithing template has a new texture and recipe.
+
 ## [1.6.0-alpha.1] - 2023-05-12
 ### Added
 - Gilding upgrade smithing template (1.20 experimental feature).
