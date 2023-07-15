@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.util.MutableHashedLinkedMap;
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -16,9 +16,9 @@ import net.minecraftforge.fml.common.Mod;
 public class CreativeModeTabEventHandler
 {
     @SubscribeEvent
-    public static void buildCreativeTabContents(CreativeModeTabEvent.BuildContents event)
+    public static void buildCreativeTabContents(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTab() == CreativeModeTabs.COMBAT)
+        if (event.getTabKey() == CreativeModeTabs.COMBAT)
         {
             putAfter(event.getEntries(), new ItemStack(Items.NETHERITE_BOOTS),
                     ModItems.GILDED_NETHERITE_HELMET.get(),

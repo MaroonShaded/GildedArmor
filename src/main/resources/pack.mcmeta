@@ -1,8 +1,10 @@
 {
     "pack": {
-        "description": "gildedarmor resources",
-        "pack_format": 13,
-        "forge:resource_pack_format": 13,
-        "forge:data_pack_format": 12
+        "description": {
+            "text": "${mod_id} resources"
+        },
+        "pack_format": 15,
+        "forge:resource_pack_format": 15,
+        "forge:data_pack_format": 15
     }
 }

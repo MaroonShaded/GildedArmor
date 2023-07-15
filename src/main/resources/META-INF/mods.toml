@@ -1,31 +1,31 @@
 modLoader="javafml"
-loaderVersion="[45,)"
-license="MIT"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
 issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 
 [[mods]]
-    modId="gildedarmor"
-    version="${file.jarVersion}"
-    displayName="Gilded Armor"
+    modId="${mod_id}"
+    version="${mod_version}"
+    displayName="${mod_name}"
     updateJSONURL="https://raw.githubusercontent.com/MaroonShaded/maroonshaded.github.io/main/projects/mods/gildedarmor/update.json"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/gildedarmor"
     logoFile="gildedarmor.png"
     credits="Thanks to SystemZee for the idea and all the translators and contributors!"
-    authors="MaroonShaded"
-    description="Gilded armor makes piglins peaceful while you're using a stronger material."
+    authors="${mod_authors}"
+    description='''${mod_description}'''
 
-[[dependencies.gildedarmor]]
+[[dependencies.${mod_id}]]
     modId="forge"
     mandatory=true
-    versionRange="[45,)"
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
-[[dependencies.gildedarmor]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4,1.20)"
+    versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
 
-[modproperties.gildedarmor]
+[modproperties.${mod_id}]
     catalogueItemIcon="gildedarmor:netherite_chestplate"
