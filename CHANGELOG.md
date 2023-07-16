@@ -141,7 +141,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-alpha.1...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-beta.1...HEAD
+[1.6.0-beta.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-alpha.1...v1.6.0-beta.1
 [1.6.0-alpha.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.1...v1.6.0-alpha.1
 [1.5.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.0...v1.5.1
 [1.5.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.4.0...v1.5.0
