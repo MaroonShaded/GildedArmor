@@ -5,7 +5,7 @@ plugins {
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
-version = '1.4.1'
+version = '1.4.2'
 group = 'maroonshaded.gildedarmor' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'gildedarmor'
 
@@ -124,6 +124,14 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+
+    maven {
+        name = "Modrinth"
+        url = "https://api.modrinth.com/maven"
+        content {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 dependencies {
@@ -141,6 +149,8 @@ dependencies {
     // For more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+
+    implementation fg.deobf("maven.modrinth:detail-armor-bar:2.6.4+1.19.2-forge")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
