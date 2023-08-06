@@ -4,12 +4,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] - 2023-07-29
+## [Unreleased]
 ### Added
 - Compatibility with Detail Armor Bar.
+- Russian translation for the gilded enderite armor.
 
 ### Changed
 - Grouped gilded armor with the other armor sets in the creative tab.
+- Shorten credits.
+
+### Fixed
+- `pt_br` and `es_ve` translation files.
 
 ## [1.4.1] - 2023-01-24
 ### Changed
