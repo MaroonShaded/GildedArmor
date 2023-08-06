@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -19,6 +20,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class GildedArmor
 {
     public static final String MODID = "gildedarmor";
+    public static final String DETAILAB_MODID = "detailab";
 
     public GildedArmor()
     {
@@ -42,6 +44,14 @@ public class GildedArmor
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            if (ModList.get().isLoaded(DETAILAB_MODID))
+            {
+                registerArmorBars();
+            }
+        }
+
+        private static void registerArmorBars()
+        {
             TextureOffset outline = new TextureOffset(9, 0);
             TextureOffset outlineHalf = new TextureOffset(0, 0);
 
@@ -62,8 +72,8 @@ public class GildedArmor
                             (ArmorItem) ModItems.GILDED_NETHERITE_BOOTS.get()
                     )
                     .render(stack -> DetailArmorBar.getConfig().getOptions().toggleVanillaTexture
-                                    ? renderManager
-                                    : vanillaRenderManager)
+                            ? renderManager
+                            : vanillaRenderManager)
                     .register();
         }
     }
