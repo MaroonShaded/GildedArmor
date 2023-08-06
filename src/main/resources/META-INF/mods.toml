@@ -22,7 +22,7 @@ issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 [[dependencies.gildedarmor]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.19.3)"
+    versionRange="1.19.2"
     ordering="NONE"
     side="BOTH"
 
