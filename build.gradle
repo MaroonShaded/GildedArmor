@@ -150,7 +150,7 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    implementation fg.deobf("maven.modrinth:detail-armor-bar:2.6.4+1.19.2-forge")
+    compileOnly fg.deobf("maven.modrinth:detail-armor-bar:2.6.4+1.19.2-forge")
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
