@@ -32,6 +32,12 @@ public class CreativeModeTabEventHandler
                     ModItems.GILDED_ENDERITE_BOOTS.get()
             );
         }
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
+            event.getEntries().putAfter(new ItemStack(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                    new ItemStack(ModItems.GILDING_UPGRADE_SMITHING_TEMPLATE.get()),
+                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        }
     }
 
     public static void putAfter(MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> entries,
