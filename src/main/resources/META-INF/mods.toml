@@ -28,4 +28,4 @@ issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
     side="BOTH"
 
 [modproperties.${mod_id}]
-    catalogueItemIcon="gildedarmor:netherite_chestplate"
+    catalogueItemIcon="gildedarmor:gilded_netherite_chestplate"
