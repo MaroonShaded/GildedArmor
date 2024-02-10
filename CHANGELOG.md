@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.7.0] - 2024-02-10
 ### Fixed
 - Gilding upgrade smithing template is now in the creative inventory.
+- Gilding upgrade smithing template is now properly localized.
 - The Catalogue mod now uses the correct item id for the icon.
 ### Changed
 - Updated to 1.20.4.
