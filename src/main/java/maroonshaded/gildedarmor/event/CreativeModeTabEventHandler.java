@@ -29,7 +29,6 @@ public class CreativeModeTabEventHandler
             );
             if (ModList.get().isLoaded(GildedArmor.ENDERITE_MOD_MODID))
             {
-                System.out.println("It is loaded");
                 putAfter(event.getEntries(), new ItemStack(ModItems.GILDED_NETHERITE_BOOTS.get()),
                         ModItems.GILDED_ENDERITE_HELMET.get(),
                         ModItems.GILDED_ENDERITE_CHESTPLATE.get(),
