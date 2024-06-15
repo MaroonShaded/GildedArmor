@@ -5,11 +5,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.6.0] - 2024-06-15
+### Added
+- Portuguese, French, Spanish, and Toki Pona translations for the new smithing template mechanics.
+
 ### Changed
-- Updated translations.
 - Gilded enderite armor only shows up in the creative inventory when the Enderite mod is loaded.
 
 ### Fixed
+- Gilding upgrade smithing template is now in the creative inventory.
+- Gilding upgrade smithing template is now properly localized.
+- The Catalogue mod now uses the correct item id for the icon.
 - Gilded netherite armor now has the correct durability.
 
 ## [1.6.0-beta.1] - 2023-07-15
