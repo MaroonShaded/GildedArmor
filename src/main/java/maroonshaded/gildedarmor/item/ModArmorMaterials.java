@@ -23,7 +23,7 @@ public enum ModArmorMaterials implements StringRepresentable, ArmorMaterial
         map.put(ArmorItem.Type.CHESTPLATE, 8);
         map.put(ArmorItem.Type.HELMET, 3);
     }), 17, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F,
-            () -> Ingredient.of(Items.NETHERITE_INGOT), true),
+            () -> Ingredient.of(Items.NETHERITE_INGOT), false),
     GILDED_ENDERITE("gilded_enderite", 8, Util.make(new EnumMap<>(ArmorItem.Type.class), map ->
     {
         map.put(ArmorItem.Type.BOOTS, 4);

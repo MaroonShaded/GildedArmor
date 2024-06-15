@@ -14,6 +14,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class GildedArmor
 {
     public static final String MODID = "gildedarmor";
+    public static final String ENDERITE_MOD_MODID = "enderitemod";
 
     public static final TagKey<Item> ENDERITE_INGOT_TAG = ItemTags.create(location("enderite_ingot"));
 

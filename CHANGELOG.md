@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2024-06-15
+### Changed
+- Updated translations.
+- Gilded enderite armor only shows up in the creative inventory when the Enderite mod is loaded.
+
+### Fixed
+- Gilded netherite armor now has the correct durability.
+
 ## [1.6.0-beta.1] - 2023-07-15
 ### Changed
 - Gilding upgrade smithing template has a new texture and recipe.
@@ -141,7 +149,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-beta.1...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-beta.1...1.6.0
 [1.6.0-beta.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.6.0-alpha.1...v1.6.0-beta.1
 [1.6.0-alpha.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.1...v1.6.0-alpha.1
 [1.5.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.5.0...v1.5.1
