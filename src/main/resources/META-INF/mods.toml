@@ -4,26 +4,29 @@ license="${mod_license}"
 issueTrackerURL="https://github.com/MaroonShaded/GildedArmor/issues"
 
 [[mods]]
-    modId="${mod_id}"
-    version="${mod_version}"
-    displayName="${mod_name}"
-    updateJSONURL="https://raw.githubusercontent.com/MaroonShaded/maroonshaded.github.io/main/projects/mods/gildedarmor/update.json"
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/gildedarmor"
-    logoFile="gildedarmor.png"
-    logoBlur=false
-    credits="Thanks to SystemZee for the idea and all the translators and contributors!"
-    authors="${mod_authors}"
-    description='''${mod_description}'''
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="https://raw.githubusercontent.com/MaroonShaded/maroonshaded.github.io/main/projects/mods/gildedarmor/update.json"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/gildedarmor"
+logoFile="gildedarmor.png"
+logoBlur=false
+credits="Thanks to SystemZee for the idea and all the translators and contributors!"
+authors="${mod_authors}"
+description='''${mod_description}'''
+
+[[accessTransformers]]
+file="META-INF/accesstransformer.cfg"
 
 [[dependencies.${mod_id}]]
-    modId="forge"
-    mandatory=true
-    versionRange="${forge_version_range}"
+    modId="neoforge"
+    type="required"
+    versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
     modId="minecraft"
-    mandatory=true
+    type="required"
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"

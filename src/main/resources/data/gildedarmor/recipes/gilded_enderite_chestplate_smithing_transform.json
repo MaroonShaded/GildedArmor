@@ -1,28 +1,22 @@
 {
-  "type": "forge:conditional",
-  "recipes": [
+  "neoforge:conditions": [
     {
-      "conditions": [
-        {
-          "type": "forge:mod_loaded",
-          "modid": "enderitemod"
-        }
-      ],
-      "recipe": {
-        "type": "minecraft:smithing_transform",
-        "template": {
-          "item": "gildedarmor:gilding_upgrade_smithing_template"
-        },
-        "base": {
-          "item": "enderitemod:enderite_chestplate"
-        },
-        "addition": {
-          "item": "minecraft:gold_ingot"
-        },
-        "result": {
-          "item": "gildedarmor:gilded_enderite_chestplate"
-        }
-      }
+      "type": "neoforge:mod_loaded",
+      "modid": "enderitemod"
     }
-  ]
+  ],
+
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "gildedarmor:gilding_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "enderitemod:enderite_chestplate"
+  },
+  "addition": {
+    "item": "minecraft:gold_ingot"
+  },
+  "result": {
+    "item": "gildedarmor:gilded_enderite_chestplate"
+  }
 }

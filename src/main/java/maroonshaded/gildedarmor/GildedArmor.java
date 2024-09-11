@@ -5,10 +5,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
 
 @Mod(GildedArmor.MODID)
 public class GildedArmor
@@ -18,13 +16,9 @@ public class GildedArmor
 
     public static final TagKey<Item> ENDERITE_INGOT_TAG = ItemTags.create(location("enderite_ingot"));
 
-    public GildedArmor()
+    public GildedArmor(IEventBus modEventBus)
     {
-        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         ModItems.ITEMS.register(modEventBus);
-
-        MinecraftForge.EVENT_BUS.register(this);
     }
 
     public static ResourceLocation location(String path)
