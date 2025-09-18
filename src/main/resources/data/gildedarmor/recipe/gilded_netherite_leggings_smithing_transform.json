@@ -1,22 +1,15 @@
 {
-  "neoforge:conditions": [
-    {
-      "type": "neoforge:mod_loaded",
-      "modid": "enderitemod"
-    }
-  ],
-
   "type": "minecraft:smithing_transform",
   "template": {
     "item": "gildedarmor:gilding_upgrade_smithing_template"
   },
   "base": {
-    "item": "enderitemod:enderite_chestplate"
+    "item": "minecraft:netherite_leggings"
   },
   "addition": {
     "item": "minecraft:gold_ingot"
   },
   "result": {
-    "item": "gildedarmor:gilded_enderite_chestplate"
+    "id": "gildedarmor:gilded_netherite_leggings"
   }
 }

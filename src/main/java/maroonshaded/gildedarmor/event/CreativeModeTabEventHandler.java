@@ -2,55 +2,57 @@ package maroonshaded.gildedarmor.event;
 
 import maroonshaded.gildedarmor.GildedArmor;
 import maroonshaded.gildedarmor.init.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.ModList;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.common.util.MutableHashedLinkedMap;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 
-@Mod.EventBusSubscriber(modid = GildedArmor.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = GildedArmor.MODID)
 public class CreativeModeTabEventHandler
 {
+    private static final ResourceKey<CreativeModeTab> ENDERITE_TAB = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), ResourceLocation.fromNamespaceAndPath(GildedArmor.ENDERITE_MOD_MODID, "enderite_group"));
+
     @SubscribeEvent
     public static void buildCreativeTabContents(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.COMBAT)
         {
-            putAfter(event.getEntries(), new ItemStack(Items.NETHERITE_BOOTS),
+            insertAllAfter(event, new ItemStack(Items.NETHERITE_BOOTS),
                     ModItems.GILDED_NETHERITE_HELMET.get(),
                     ModItems.GILDED_NETHERITE_CHESTPLATE.get(),
                     ModItems.GILDED_NETHERITE_LEGGINGS.get(),
                     ModItems.GILDED_NETHERITE_BOOTS.get()
             );
-            if (ModList.get().isLoaded(GildedArmor.ENDERITE_MOD_MODID))
-            {
-                putAfter(event.getEntries(), new ItemStack(ModItems.GILDED_NETHERITE_BOOTS.get()),
-                        ModItems.GILDED_ENDERITE_HELMET.get(),
-                        ModItems.GILDED_ENDERITE_CHESTPLATE.get(),
-                        ModItems.GILDED_ENDERITE_LEGGINGS.get(),
-                        ModItems.GILDED_ENDERITE_BOOTS.get());
-            }
         }
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
         {
-            event.getEntries().putAfter(new ItemStack(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+            event.insertAfter(new ItemStack(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
                     new ItemStack(ModItems.GILDING_UPGRADE_SMITHING_TEMPLATE.get()),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
+        else if (event.getTabKey().equals(ENDERITE_TAB))
+        {
+            insertAllAfter(event, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath(GildedArmor.ENDERITE_MOD_MODID, "enderite_boots"))),
+                    ModItems.GILDED_ENDERITE_HELMET.get(),
+                    ModItems.GILDED_ENDERITE_CHESTPLATE.get(),
+                    ModItems.GILDED_ENDERITE_LEGGINGS.get(),
+                    ModItems.GILDED_ENDERITE_BOOTS.get());
+        }
     }
 
-    public static void putAfter(MutableHashedLinkedMap<ItemStack, CreativeModeTab.TabVisibility> entries,
-                                ItemStack after, ItemLike... items)
+    public static void insertAllAfter(BuildCreativeModeTabContentsEvent event, ItemStack after, ItemLike... items)
     {
         for (ItemLike item : items)
         {
             ItemStack stack = new ItemStack(item);
-            entries.putAfter(after, stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(after, stack, CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
             after = stack;
         }
     }
