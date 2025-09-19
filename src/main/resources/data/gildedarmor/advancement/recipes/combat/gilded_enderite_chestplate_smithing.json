@@ -5,39 +5,36 @@
       "modid": "enderitemod"
     }
   ],
-
-  "advancement": {
-    "parent": "minecraft:recipes/root",
-    "criteria": {
-      "has_enderite_chestplate": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": [
-                "enderitemod:enderite_chestplate"
-              ]
-            }
-          ]
-        }
-      },
-      "has_the_recipe": {
-        "trigger": "minecraft:recipe_unlocked",
-        "conditions": {
-          "recipe": "gildedarmor:gilded_enderite_chestplate_smithing"
-        }
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderite_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enderitemod:enderite_chestplate"
+            ]
+          }
+        ]
       }
     },
-    "requirements": [
-      [
-        "has_enderite_chestplate",
-        "has_the_recipe"
-      ]
-    ],
-    "rewards": {
-      "recipes": [
-        "gildedarmor:gilded_enderite_chestplate_smithing"
-      ]
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "gildedarmor:gilded_enderite_chestplate_smithing"
+      }
     }
+  },
+  "requirements": [
+    [
+      "has_enderite_chestplate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gildedarmor:gilded_enderite_chestplate_smithing"
+    ]
   }
 }
