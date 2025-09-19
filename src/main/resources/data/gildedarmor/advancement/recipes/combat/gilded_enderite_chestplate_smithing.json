@@ -12,9 +12,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "enderitemod:enderite_chestplate"
-            ]
+            "items": "enderitemod:enderite_chestplate"
           }
         ]
       }
