@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+### Changed
+- Updated to 1.21.4.
+- Added gilded armor to the tag `minecraft:piglin_safe_armor`.
+- Added the gilded Enderite helmet to the tag `minecraft:gaze_disguise_equipment`.
+- Added gilded enderite armor to the mod's own `enderitemod:enderite_armor` tag.
+- Gilding upgrades now use the tag `#minecraft:gold_tool_materials` for the `addition` ingredient. 
+- Translation entries for Toki Pona.
+
+### Fixed
+- Gilded Netherite armor's enchantability value was incorrect.
+
 ## [1.9.0] - 2025-09-20
 ### Changed
 - Updated to 1.21.
