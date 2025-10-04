@@ -4,13 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.10.0] - 2025-10-04
 ### Changed
 - Updated to 1.21.4.
 - Added gilded armor to the tag `minecraft:piglin_safe_armor`.
 - Added the gilded Enderite helmet to the tag `minecraft:gaze_disguise_equipment`.
 - Added gilded enderite armor to the mod's own `enderitemod:enderite_armor` tag.
-- Gilding upgrades now use the tag `#minecraft:gold_tool_materials` for the `addition` ingredient. 
+- Gilding upgrades now use the tag `#minecraft:gold_tool_materials` for the `addition` ingredient.
 - Translation entries for Toki Pona.
 
 ### Fixed
@@ -190,7 +190,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Gilded armor.
 
-[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.9.0...HEAD
+[Unreleased]: https://github.com/MaroonShaded/GildedArmor/compare/v1.10.0...HEAD
+[1.10.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.9.0...v1.10.0
 [1.9.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.7.1...v1.9.0
 [1.7.1]: https://github.com/MaroonShaded/GildedArmor/compare/v1.7.0...v1.7.1
 [1.7.0]: https://github.com/MaroonShaded/GildedArmor/compare/v1.7.0-beta.1...v1.7.0
